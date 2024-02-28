@@ -1,5 +1,8 @@
+body{
+    background: #e9ecf8;
+}
 h2{
-    color: purple;
+    font-weight: bold;
     text-align: center;
     font-size: xx-large;
 
@@ -13,16 +16,33 @@ left: 40px;
 gap: 40px;
 }
 
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+
+
+.texto-encriptado{
+    border: none;
+    color: #0a3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    padding: 5px;
+}
+
 
 
 .btnencriptar{
+    margin-top: 18px;
     padding: 6px;
     padding-top: 5px;
     background-color:#0a3871;
     color: aliceblue;
     font-size: medium;
     border-radius: 10px;
-    border: black;
+    border-color: black;
 
 }
 
@@ -31,7 +51,54 @@ gap: 40px;
     text-decoration: underline;
 }
 
+.btndesencriptar{
+    margin-top: 18px;
+    padding: 6px;
+    padding-top: 5px;
+    background-color:white;
+    font-size: medium;
+    border-radius: 10px;
+    border-color: #0a3871;
+}
 
+.btndesencriptar:hover{
+    color:#c719c4;
+    text-decoration: underline;
+
+}
+
+.campo-texto{
+    background: white;
+    margin-left: 15px;
+    margin-top: 30px;
+    padding-left: 40px;
+    position: fixed;
+}
+
+.mensaje{
+    background: white;
+    border: none;
+    background-image: url("/Muñeconot-found.png");
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+.copiar{
+    border: 1px solid blue;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 30px;
+    margin-left: 120px;
+    margin-top: 320px;
+    position: absolute;
+    width: 100px;
+}
+
+.informacion{
+    padding: 40px
+}
 
 .footer{
     padding: 40px;

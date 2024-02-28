@@ -30,3 +30,21 @@ function Encriptar (fraseEncriptada) {
     }
     return fraseEncriptada;
 }
+
+function btnDesencriptar() {
+    campoMensaje.value = Desencriptar(campoTexto.value);
+}
+function Desencriptar (fraseDesencriptada) {
+    // Recorrer matriz de codigos
+    for(let i = 0; i < matriz_code.length; i++) {
+        const key = matriz_code[i][1];
+        const value =  matriz_code[i][0];
+        const includesKey = fraseDesencriptada.includes(key);
+
+        if (includesKey) {
+            fraseDesencriptada = fraseDesencriptada.replaceAll(key, value)
+        }
+    }
+
+    return fraseDesencriptada;
+}

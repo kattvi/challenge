@@ -2,12 +2,13 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-
         <link rel="stylesheet" href="style.css">
         <title> challenge-encriptador </title>
+
             <div class="logo">
                 <h1><img src="Logologo-a.png" alt="logo alura"></h1>
             </div>
+
         <h2 class="titulo-principal">Encriptador</h2>
     </head>
 
@@ -15,15 +16,21 @@
         <main class="main">
             <section>
                 <textarea id="texto-encriptado" class="campo-texto"
-                placeholder="Texto a Encriptar"></textarea>
+                placeholder="Escribe el texto aqui."></textarea>
+                <div>
+                    <h6 class="informacion">Solo letras minusculas y sin acentos.</h6>
+                </div>
                 <div class="btn">
                     <button class="btnencriptar" onclick="btnEncriptar()">Encriptar</button>
-                    <button class="btndesencriptar">Desencriptar</button>
+                    <button class="btndesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
                 </div>
             </section>
 
             <section class="campo-mensaje">
-                <textarea id="campo-mensaje" class="mensaje"></textarea>
+                <textarea id="campo-mensaje" class="mensaje" ></textarea>
+                <div>
+                    <button class="copiar">copiar</button>
+                </div>
             </section>
         </main>
     </body>
