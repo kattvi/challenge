@@ -15,21 +15,19 @@
     <body>
         <main class="main">
             <section>
-                <textarea id="texto-encriptado" class="campo-texto"
+                <textarea id="texto-encriptado" class="campo-texto" cols="20" rows="10"
                 placeholder="Escribe el texto aqui."></textarea>
-                <div>
-                    <h6 class="informacion">Solo letras minusculas y sin acentos.</h6>
-                </div>
-                <div class="btn">
+                <h1>Solo letras minusculas y sin acentos.</h1>
+                <div class="botones">
                     <button class="btnencriptar" onclick="btnEncriptar()">Encriptar</button>
                     <button class="btndesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
                 </div>
             </section>
 
             <section class="campo-mensaje">
-                <textarea id="campo-mensaje" class="mensaje" ></textarea>
+                <textarea id="campo-mensaje" class="mensaje" cols="20" rows="10" ></textarea>
                 <div>
-                    <button class="copiar">copiar</button>
+                    <button class="copiar" onclick="copiarTexto()">copiar</button>
                 </div>
             </section>
         </main>
@@ -37,9 +35,7 @@
 
     
     <footer>
-        <p>
-            <p class="Copyright"> &copy; Copyright Sarai Gonzalez - 2024 </p>
-        </p>
+        <p class="Copyright"> &copy; Copyright Sarai Gonzalez - 2024 </p>
     </footer>
 <script src="script.js"></script>
 </html>
