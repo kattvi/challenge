@@ -1,5 +1,5 @@
-const campoTexto = document.querySelector("#texto-encriptado");
-const campoMensaje = document.querySelector("#campo-mensaje");
+const campoTexto = document.querySelector("#texto-encriptado"); // textarea
+const campoMensaje = document.querySelector("#campo-mensaje"); // textarea
 
 const matriz_code = [
     ["e","enter"], //inice 0
@@ -10,7 +10,9 @@ const matriz_code = [
 ];
 
 function btnEncriptar() {
-    campoMensaje.value = Encriptar(campoTexto.value);
+    const value = campoTexto.value?.toLowerCase();
+    const encrypted = Encriptar(value);
+    campoMensaje.value = encrypted;
 }
 
 function Encriptar (fraseEncriptada) {
@@ -47,5 +49,13 @@ function Desencriptar (fraseDesencriptada) {
     }
 
     return fraseDesencriptada;
+}
+
+function btnCopiar() {
+    
+    const value = campoMensaje.value;
+    campoTexto.value = value;
+    campoMensaje.value = "";
+    alert('Texto copiado!');
 }
 
